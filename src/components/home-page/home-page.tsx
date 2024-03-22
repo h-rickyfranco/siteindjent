@@ -1,5 +1,7 @@
 import classNames from 'classnames';
 import styles from './home-page.module.scss';
+import Lottie from 'react-lottie';
+import animationData from '../../Lottie/indjent_lottie.json';
 
 export interface HomePageProps {
     className?: string;
@@ -10,23 +12,23 @@ export interface HomePageProps {
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
 export const HomePage = ({ className }: HomePageProps) => {
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice',
+        },
+    };
     return (
         <div className={classNames(styles.root, className)}>
-            <div className={styles.title}>I&apos;M A TITLE</div>
-            <div className={styles.paragraph}>
-                <div className={styles.text}>
-                    I’m a paragraph. Add your own text and edit me on properties panel on the right.
-                    It’s easy. Just select me and make changes to the font on the styles panel on
-                    the right. I’m a great place for you to tell a story and let your viewers know a
-                    little more about you.
-                </div>
+            <div className={styles.divtexto}>
+                <h1 className={styles.animatecharcter}>Vem aí dia 19/04</h1>
             </div>
-            <button className={styles.button}>Learn more</button>
-            <img
-                src="https://images.unsplash.com/photo-1622542796254-5b9c46ab0d2f?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dwixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
-                alt=""
-                className={styles.image}
-            />
+            <Lottie options={defaultOptions} height={600} width={600} />
+            <div className={styles.h3div}>
+                <h3 className={styles.h3}>&quot;A voz que ecoa sem medo sem se calar!&quot;</h3>
+            </div>
         </div>
     );
 };

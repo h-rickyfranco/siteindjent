@@ -19,7 +19,9 @@ export const SiteWrapper = ({ className }: SiteWrapperProps) => {
             <div className={styles.content}>
                 <Outlet />
             </div>
-            <Footer />
+            <div className={styles.footerdiv}>
+                <Footer />
+            </div>
         </div>
     );
 };

@@ -4,9 +4,41 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    // justify-content: space-between;
 }
 
 .content {
+    width: 100vw;
+    position: relative; /* Define posição relativa para que o pseudo-elemento seja posicionado em relação a este elemento */
+    background-image: url('../../imagens/capa.jpg');
+    background-size: cover;
     flex-grow: 1;
+    z-index: -3;
+
+    &::after {
+        content: ''; /* Adiciona um conteúdo vazio ao pseudo-elemento */
+        position: absolute; /* Define posição absoluta para que o pseudo-elemento cubra completamente o conteúdo */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(
+            0,
+            0,
+            0,
+            0.65
+        ); /* Cor do overlay - neste caso, preto com 50% de opacidade */
+        z-index: -2; /* Coloca o overlay atrás da imagem de fundo */
+    }
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.footerdiv {
+    z-index: 2;
 }

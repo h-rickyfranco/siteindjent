@@ -1,11 +1,8 @@
 import classNames from 'classnames';
 import styles from './footer.module.scss';
-import { ReactComponent as FacebookIcon } from '../../assets/facebook.svg';
-import { ReactComponent as TwitterxIcon } from '../../assets/twitterx.svg';
-import { ReactComponent as DiscordIcon } from '../../assets/discord.svg';
-import { ReactComponent as YoutubeIcon } from '../../assets/youtube.svg';
-import { ReactComponent as MediumIcon } from '../../assets/medium.svg';
-import { ReactComponent as GithubIcon } from '../../assets/github.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 export interface FooterProps {
     className?: string;
@@ -19,35 +16,18 @@ export const Footer = ({ className }: FooterProps) => {
     return (
         <div className={classNames(styles.root, className)}>
             <div className={styles.details}>
-                <div>Contact Jane Doe</div>
-                <div className={styles.small}>
-                    Mail: info@mysite.com
+                <div>
+                    <h4 className={styles.h4}>Banda Indjent - 2024</h4>
                     <br />
-                    Tel: 123-456-7890
-                    <br />
-                    500 Terry Francine Street,
-                    <br />
-                    San Francisco, CA 94158
+                    <h5>bandaindjent@gmail.com</h5>
                 </div>
             </div>
             <div className={styles.social}>
-                <a href="/">
-                    <TwitterxIcon className={styles.icon} />
+                <a href="https://www.youtube.com/@bandaindjent" target='_blank'>
+                    <FontAwesomeIcon className={styles.faicons} icon={faYoutube} />
                 </a>
-                <a href="/">
-                    <FacebookIcon className={styles.icon} />
-                </a>
-                <a href="/">
-                    <DiscordIcon className={styles.icon} />
-                </a>
-                <a href="/">
-                    <YoutubeIcon className={styles.icon} />
-                </a>
-                <a href="/">
-                    <MediumIcon className={styles.icon} />
-                </a>
-                <a href="/">
-                    <GithubIcon className={styles.icon} />
+                <a href="https://www.instagram.com/bandaindjent/" target='_blank'>
+                    <FontAwesomeIcon className={styles.faicons} icon={faInstagram} />
                 </a>
             </div>
         </div>

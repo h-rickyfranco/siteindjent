@@ -4,13 +4,16 @@
     font: $large-font;
     display: flex;
     flex-direction: row;
-    background-color: $snow-white;
+    background-color: rgba(245, 245, 245, 0.75);
     padding-top: 2em;
     padding-bottom: 3em;
     justify-content: center;
     padding-right: 7em;
     padding-left: 7em;
     column-gap: 5em;
+    min-height: 86vh;
+    z-index: 300;
+    width: 100vw;
 }
 
 .title {
@@ -18,23 +21,62 @@
     letter-spacing: 0.4rem;
 }
 
-
 .paragraph {
     margin-bottom: 1.5em;
     font: $paragraph-font;
 }
 
 .text {
-    text-align: start;
-    width: 50vw;
-    margin-top: 3em;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1em;
+    // text-align: start;
+    width: 40vw;
+    min-width: 200px;
+    // margin-top: 3em;
+    // display: flex;
+    // flex-direction: column;
+    // row-gap: 1em;
+    // max-height: 500px;
+    // height: 20vh;
+    overflow-y: auto;
 }
 
+// .text {
+//     text-align: start;
+//     width: 50vw;
+//     min-width: 200px;
+//     margin-top: 3em;
+//     display: flex;
+//     flex-direction: column;
+//     row-gap: 1em;
+//     max-height: 500px;
+//     overflow-y: auto;
+
+//     &::-webkit-scrollbar {
+//         width: 12px; /* Largura da barra de rolagem */
+//       }
+
+//       /* Estilização da alça (thumb) da barra de rolagem */
+//       &::-webkit-scrollbar-thumb {
+//         background-color: #888; /* Cor da alça */
+//         border-radius: 6px; /* Raio da borda da alça */
+//       }
+
+//       /* Estilização do fundo da barra de rolagem */
+//       &::-webkit-scrollbar-track {
+//         background-color: #f1f1f1; /* Cor de fundo da barra de rolagem */
+//         border-radius: 6px; /* Raio da borda do fundo da barra de rolagem */
+//       }
+
+//       /* Estilização ao passar o mouse sobre a barra de rolagem */
+//       &::-webkit-scrollbar-thumb:hover {
+//         background-color: #555; /* Cor da alça ao passar o mouse */
+//       }
+// }
 
 .image {
     align-self: center;
     width: 20vw;
+}
+
+h3 {
+  font-weight: bold;
 }
