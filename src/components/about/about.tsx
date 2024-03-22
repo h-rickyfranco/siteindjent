@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import styles from './about.module.scss';
 import lotusblack from '../../imagens/lotus_black.png'
+import {motion} from 'framer-motion';
 
 export interface AboutProps {
     className?: string;
@@ -12,12 +13,18 @@ export interface AboutProps {
  */
 export const About = ({ className }: AboutProps) => {
     return (
-        <div className={classNames(styles.root, className)}>
+        <motion.div
+        className={classNames(styles.root, className)}
+        
+        initial={{ opacity: 0, width: 0 }}
+        animate={{ opacity: 1, width: "100%" }}
+        exit={{ x: window.innerWidth, transition: {duration: 0.2} }}
+        >
             <div className={styles.text}>
                 {/* <div className={styles.title}>Sobre</div> */}
                 <div className={styles.paragraph}>
                 <br /><h3>Sobre a banda:</h3><br />
-                Indjent não é apenas uma banda de metal e rap, é uma chama ardente em meio às trevas da injustiça social, uma voz dos marginalizados e uma promessa de mudança. Com uma fusão única de elementos do metal moderno e do rap, a banda está redefinindo os limites da música de protesto, inspirando e empoderando aqueles que enfrentam adversidades em um mundo desigual.<br /><br />
+                <em>Indjent</em> não é apenas mais uma Banda que surge no mercado. É uma banda de metal e rap com uma chama ardente em meio às trevas da injustiça social, uma voz dos marginalizados e uma promessa de mudança. Com uma fusão única de elementos do metal moderno e do rap, a <em>Indjent</em> está redefinindo os limites da música de protesto, inspirando e empoderando aqueles que enfrentam adversidades em um mundo tão desigual.<br /><br />
 
 Formada por Ricky Franco (guitarra e voz), Michel Villares (voz), Raquel Boralli (voz), Eddie Skull(guitarra), Jilson Magno(baixo) e Thi Camargo (bateria), Indjent nasceu da paixão compartilhada por expressão artística e justiça social. Cada membro traz consigo uma história única, mas todos compartilham a mesma visão de usar sua música como uma ferramenta para a mudança positiva.<br /><br />
 
@@ -43,6 +50,6 @@ Para mais informações sobre Indjent e seu próximo lançamento, visite nosso s
                 alt=""
                 className={styles.image}
             />
-        </div>
+        </motion.div>
     );
 };

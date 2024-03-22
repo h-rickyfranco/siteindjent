@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import styles from './home-page.module.scss';
 import Lottie from 'react-lottie';
 import animationData from '../../Lottie/indjent_lottie.json';
+import {motion} from 'framer-motion';
 
 export interface HomePageProps {
     className?: string;
@@ -21,7 +22,13 @@ export const HomePage = ({ className }: HomePageProps) => {
         },
     };
     return (
-        <div className={classNames(styles.root, className)}>
+        <motion.div 
+        className={classNames(styles.root, className)}
+        
+        initial={{ opacity: 0, width: 0 }}
+        animate={{ opacity: 1, width: "100%" }}
+        exit={{ x: window.innerWidth, transition: {duration: 0.2} }}
+        >
             <div className={styles.divtexto}>
                 <h1 className={styles.animatecharcter}>Vem aí dia 19/04</h1>
             </div>
@@ -29,6 +36,6 @@ export const HomePage = ({ className }: HomePageProps) => {
             <div className={styles.h3div}>
                 <h3 className={styles.h3}>&quot;A voz que ecoa sem medo sem se calar!&quot;</h3>
             </div>
-        </div>
+        </motion.div>
     );
 };
