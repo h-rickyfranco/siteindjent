@@ -23,7 +23,7 @@
 
 .scrolled {
     background-color: rgba(0, 0, 0, 0.85);
-    transition: background-color 0.3s ease-in; /* Altere para a cor desejada */
+    transition: background-color 0.3s ease-in;
 }
 
 .menu {
@@ -72,6 +72,10 @@
     // margin-left: 60rem;
     transition: opacity 1s ease-in-out;
         // border: 1px solid #ff0000;
+
+        @media screen and (max-width: 600px) {
+            opacity: 0;
+        }
 }
 
 .displaycounter {

@@ -1,9 +1,27 @@
+.countercontainer {
+  background-color: white;
+  display: flex;
+  min-width: 30vw;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+  border-radius: 1rem;
+
+  @media screen and (max-width: 600px) {
+    justify-content: center;    
+  }
+}
+
 .counter {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  // gap: 1rem;
 }
 
 .counternumber {

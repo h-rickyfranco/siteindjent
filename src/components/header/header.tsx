@@ -59,22 +59,12 @@ export const Header = ({ className }: HeaderProps) => {
                 <Link
                     to="hero"
                     className={styles.link}
-                    spy={true}
-                    smooth={true}
-                    offset={-80}
-                    duration={500}
-                    activeClass={styles.active}
                 >
                     Home
                 </Link>
                 <Link
                     to="about"
                     className={styles.link}
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={500}
-                    activeClass={styles.active}
                 >
                     Sobre{' '}
                 </Link>
