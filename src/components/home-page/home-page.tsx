@@ -5,6 +5,7 @@ import animationData from '../../Lottie/indjent_lottie.json';
 import { motion } from 'framer-motion';
 import Counter from '../counter/counter';
 import useCountdown from '../../hooks/useCountdown';
+import { About } from '../about/about';
 
 export interface HomePageProps {
     className?: string;
@@ -27,11 +28,13 @@ export const HomePage = ({ className }: HomePageProps) => {
     };
     return (
         <motion.div
+            id='hero'
             className={classNames(styles.root, className)}
             initial={{ opacity: 0, width: 0 }}
             animate={{ opacity: 1, width: '100%' }}
             exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
         >
+            <div className={styles.herocontainer}>
             <Lottie options={defaultOptions} height={450} width={450} />
             <div className={styles.countercontainer}>
                 <Counter title="Dias" number={day} />
@@ -39,6 +42,8 @@ export const HomePage = ({ className }: HomePageProps) => {
                 <Counter title="Minutos" number={minute} />
                 <Counter title="Segundos" number={second} />
             </div>
+            </div>
+            <About />
         </motion.div>
     );
 };

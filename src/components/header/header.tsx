@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
 import styles from './header.module.scss';
-import { Link, NavLink } from 'react-router-dom';
 import logo from '../../imagens/lotus.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
@@ -9,6 +8,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import Counter from '../counter/counter';
 import useCountdown from '../../hooks/useCountdown';
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 export interface HeaderProps {
     className?: string;
@@ -24,10 +24,10 @@ export const Header = ({ className }: HeaderProps) => {
     const location = useLocation();
     const [isAbout, setIsAbout] = useState(false);
 
-    useEffect(() => {
-        // Verifica se a rota atual é "/about" e atualiza o estado em conformidade
-        setIsAbout(location.pathname === '/about');
-    }, [location]);
+    // useEffect(() => {
+    //     // Verifica se a rota atual é "/about" e atualiza o estado em conformidade
+    //     setIsAbout(location.pathname === '/about');
+    // }, [location]);
 
     const [color, setColor] = useState(false);
     const changeColor = () => {
@@ -37,8 +37,16 @@ export const Header = ({ className }: HeaderProps) => {
             setColor(false);
         }
     };
-
     window.addEventListener('scroll', changeColor);
+
+    const showCounterHeader = () => {
+        if (window.scrollY >= 400) {
+            setIsAbout(true);
+        } else {
+            setIsAbout(false);
+        }
+    };
+    window.addEventListener('scroll', showCounterHeader);
 
     return (
         <div className={classNames(styles.root, className, { [styles.scrolled]: color })}>
@@ -48,18 +56,28 @@ export const Header = ({ className }: HeaderProps) => {
                 </a>
             </div>
             <div className={styles.menu}>
-                <NavLink
-                    to="/"
-                    className={({ isActive }) => classNames({ [styles.active]: isActive })}
+                <Link
+                    to="hero"
+                    className={styles.link}
+                    spy={true}
+                    smooth={true}
+                    offset={-80}
+                    duration={500}
+                    activeClass={styles.active}
                 >
                     Home
-                </NavLink>
-                <NavLink
-                    to="/about"
-                    className={({ isActive }) => classNames({ [styles.active]: isActive })}
+                </Link>
+                <Link
+                    to="about"
+                    className={styles.link}
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    activeClass={styles.active}
                 >
                     Sobre{' '}
-                </NavLink>
+                </Link>
             </div>
             <div className={`${styles.countercontainer} ${isAbout ? '' : styles.displaycounter}`}>
                 <Counter title="Dias" number={day} />

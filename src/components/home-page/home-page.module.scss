@@ -4,7 +4,7 @@
     z-index: 2;
     font: $large-font;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     row-gap: 0.5em;
 
     // background-color: rgb(58, 51, 51);
@@ -30,6 +30,19 @@
     justify-items: center;
     align-content: space-between;
     justify-content: center;
+}
+
+.herocontainer {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    justify-items: center;
+    align-self: center;
+    width: 100vw;
 }
 
 .title {
@@ -133,8 +146,10 @@
     border-radius: 1rem;
     margin-right: 10em;
     background-color: rgba(255, 255, 255, 0.8);
-    min-height: 150px;
-    min-width: 30vw;
-    padding: 2rem;
-
+    min-height: 170px;
+    max-height: 200px;
+    min-width: 25vw;
+    padding: 0rem;
+    justify-items: center;
+    align-self: center;
 }
