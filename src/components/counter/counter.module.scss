@@ -1,0 +1,22 @@
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.counternumber {
+  background-color: purple;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  font-size: 4rem;
+  font-weight: bold;
+  min-width: 120px;
+  text-align: center;
+}
+
+.countertext {
+  font-size: large;
+}

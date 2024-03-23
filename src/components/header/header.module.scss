@@ -2,23 +2,23 @@
 
 .root {
     display: flex;
-    z-index: 300;
+    // z-index: 300;
     position: fixed;
     flex-direction: row;
     padding-left: 3em;
     justify-content: space-between;
-    padding-right: 3.5em;
+    // padding-right: 3.5em;
     align-items: center;
     font: $button-font;
     width: 100vw;
 
-    @media only screen and (max-width: $mobile-width) {
-        padding: 0 3em;
-    }
-    height: 4em;
+    // @media only screen and (max-width: $mobile-width) {
+    //     padding: 0 3em;
+    // }
+    height: 6em;
     color: white;
     background-color: rgba(0, 0, 0, 0.2);
-    // border: 1px solid #ffffff;
+    // // border: 1px solid #ffffff;align-content:center;flex-wrap:wrap;align-content:center;justify-items:center;flex-wrap:wrap;align-self:center;
 }
 
 .scrolled {
@@ -28,14 +28,53 @@
 
 .menu {
     display: flex;
+    scale: 1.2;
+    // border: 3px solid red;
+    margin-right: 10px;
+    // margin-left: 0;
+    justify-self: center;
     column-gap: 2rem;
-    font: $button-font;
+    // font: $button-font;
+    min-width: 100px;
+    margin: 0 auto 0 12;
+    // flex: 3;
+    // transition: margin-left 5s ease-in-out;border:1px solid #C33131;border:1px solid #A20909;border:1px solid #DA1818;
 }
 
 .active {
-    color: $snow-white;
+    color: pink;
     font-weight: 600;
 }
 .logo {
-    height: 5em;
+    height: 7em;
+}
+
+.social {
+    scale: 1.5;
+    margin-right: 20px;
+    // flex: 1;
+}
+
+.faicons {
+    // margin-left: 15px;
+    margin-right: 10px;
+}
+
+.logocontainer {
+    flex: 1;
+    max-width: 7rem;
+    // border: 1px solid #ff0000;
+}
+
+.countercontainer {
+    display: flex;
+    scale: 0.5;
+    // margin-left: 60rem;
+    transition: opacity 1s ease-in-out;
+        // border: 1px solid #ff0000;
+}
+
+.displaycounter {
+    opacity: 0;
+    overflow: visible;
 }
