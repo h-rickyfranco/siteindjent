@@ -32,7 +32,7 @@ export const HomePage = ({ className }: HomePageProps) => {
             animate={{ opacity: 1, width: '100%' }}
             exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
         >
-            <Lottie options={defaultOptions} height={600} width={600} />
+            <Lottie options={defaultOptions} height={450} width={450} />
             <div className={styles.countercontainer}>
                 <Counter title="Dias" number={day} />
                 <Counter title="Horas" number={hour} />
