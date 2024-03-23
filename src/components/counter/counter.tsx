@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './counter.module.scss';
 
-interface CounterProps {
-  title: string;
-  number: string | number; // Alterado para aceitar string ou number
-}
+// interface CounterProps {
+//   title: any;
+//   number: any; // Alterado para aceitar string ou number
+// }
 
-const Counter: React.FC<CounterProps> = ({ title, number }) => {
+const Counter = ({ title, number }: { title: any; number: any }) => {
   return (
     <div className={styles.counter}>
       <p className={styles.counternumber}>{String(number)}</p> {/* Convertendo para string */}
