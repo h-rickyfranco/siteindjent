@@ -4,7 +4,8 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
+    z-index: -200;
+    // justify-content: space-between;z-index:-;z-index:-5;z-index:unset;flex-wrap:wrap;
 }
 
 .content {
@@ -12,8 +13,11 @@
     position: relative; /* Define posição relativa para que o pseudo-elemento seja posicionado em relação a este elemento */
     background-image: url('../../imagens/capa.jpg');
     background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     flex-grow: 1;
-    z-index: -3;
+    z-index: 0;
 
     &::after {
         content: ''; /* Adiciona um conteúdo vazio ao pseudo-elemento */

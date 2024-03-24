@@ -14,10 +14,6 @@ export interface HeaderProps {
     className?: string;
 }
 
-/**
- * This component was created using Codux's Default new component template.
- * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
- */
 export const Header = ({ className }: HeaderProps) => {
     const [day, hour, minute, second] = useCountdown('Apr 19, 2024 12:00:00');
 
@@ -66,7 +62,13 @@ export const Header = ({ className }: HeaderProps) => {
                     to="about"
                     className={styles.link}
                 >
-                    Sobre{' '}
+                    Sobre
+                </Link>
+                <Link
+                    to="integrantes"
+                    className={styles.link}
+                >
+                    Integrantes
                 </Link>
             </div>
             <div className={`${styles.countercontainer} ${isAbout ? '' : styles.displaycounter}`}>

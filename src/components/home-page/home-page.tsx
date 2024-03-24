@@ -4,6 +4,7 @@ import Lottie from 'react-lottie';
 import animationData from '../../Lottie/indjent_lottie.json';
 import { About } from '../about/about';
 import CounterContainer from '../counter/counterContainer';
+import {Integrantes} from '../integrantes/integrantes';
 
 export interface HomePageProps {
     className?: string;
@@ -25,6 +26,7 @@ export const HomePage = ({ className }: HomePageProps) => {
                 <CounterContainer />
             </div>
             <About />
+            <Integrantes />
         </div>
     );
 };

@@ -1,0 +1,93 @@
+@import '@styles/theme.module.scss';
+.root {
+    min-width: 100vw;
+    background-color: rgba(169, 67, 67, 0);
+    background-image: linear-gradient(#824242, #824242);
+    background-position: 0%;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-image: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    background-position: 0%;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    margin-top: -21px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 50px;
+}
+.thumbcontainer {
+    min-width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.thumb {
+    max-width: 200px;
+    max-height: 150px;
+    min-width: 20px;
+    min-height: 20px;
+    cursor: pointer;
+}
+.detailscontainer {
+    margin: 0px 50px 50px;
+    padding: 20px;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    max-width: 100vw;
+}
+.detailsparagraph {
+    margin: 20px;
+    font-size: 2rem;
+    min-width: 40vw;
+    max-width: 70vw;
+}
+
+button {
+    cursor: pointer;
+}
+.foto {
+    max-width: 300px;
+}
+.detailscontainerout {
+    min-width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.h2 {
+    font-weight: 800;
+    line-height: 1;
+    font-size: 46px;
+}
+.h1 {
+    margin: 20px;
+    padding: 20px;
+    font-weight: 800;
+    font-size: 40px;
+}

@@ -1,40 +1,43 @@
 .countercontainer {
-  background-color: white;
-  display: flex;
-  min-width: 30vw;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  flex-wrap: wrap;
-  border-radius: 1rem;
+    background-color: white;
+    display: flex;
+    min-width: 30vw;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    border-radius: 1rem;
 
-  @media screen and (max-width: 600px) {
-    justify-content: center;    
-  }
+    @media screen and (max-width: 600px) {
+        justify-content: center;
+        margin-right: 0px;
+    }
+    margin-left: 0px;
+    margin-right: 300px;
 }
 
 .counter {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 10px;
-  // gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    // gap: 1rem;
 }
 
 .counternumber {
-  background-color: purple;
-  color: white;
-  padding: 1rem;
-  border-radius: 0.7rem;
-  font-size: 4rem;
-  font-weight: bold;
-  min-width: 120px;
-  text-align: center;
+    background-color: purple;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    font-size: 4rem;
+    font-weight: bold;
+    min-width: 120px;
+    text-align: center;
 }
 
 .countertext {
-  font-size: large;
+    font-size: large;
 }

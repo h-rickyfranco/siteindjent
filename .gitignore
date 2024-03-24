@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+#psds
+/src/fotos/michel.psd
+/src/fotos/raquel.psd
+/src/fotos/thiago.psd
+/src/fotos/ricky.psd
+/src/fotos/jilson.psd
+/src/fotos/eddie.psd
