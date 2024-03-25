@@ -61,6 +61,11 @@
     font-size: 2rem;
     min-width: 40vw;
     max-width: 70vw;
+
+    @media screen and (max-width: 600px) {
+        min-width: 100vw;
+        font-size: large;
+    }
 }
 
 button {

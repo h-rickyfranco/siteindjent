@@ -16,7 +16,7 @@ export interface IntegrantesProps {
 export const Integrantes = ({ className }: IntegrantesProps) => {
     console.log(details);
 
-    const [detail, setDetail] = useState<any>();
+    const [detail, setDetail] = useState<any>(details[0]);
 
     const handleClick = (number: number) => {
         setDetail(details[number]);

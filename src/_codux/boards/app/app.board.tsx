@@ -8,10 +8,10 @@ export default createBoard({
         canvasMargin: {
             top: 0,
             left: 0,
-            right: 0,
+            right: 14.046639231824416,
             bottom: 0,
         },
-        windowWidth: 1920,
-        windowHeight: 1080,
+        windowWidth: 360,
+        windowHeight: 740,
     },
 });

@@ -24,12 +24,17 @@
 .paragraph {
     margin-bottom: 1.5em;
     font: $paragraph-font;
+
+    @media screen and (max-width: 600px) {
+        min-width: 70vw;
+        // margin-left: -2rem;
+    }
 }
 
 .text {
     // text-align: start;
     width: 40vw;
-    min-width: 200px;
+    min-width: 30vw;
     margin-top: 40px;
     // margin-top: 3em;
     // display: flex;
@@ -38,44 +43,19 @@
     // max-height: 500px;
     // height: 20vh;
     overflow-y: auto;
+
+    @media screen and (max-width: 600px) {
+        min-width: 100vw;
+    }
 }
-
-// .text {
-//     text-align: start;
-//     width: 50vw;
-//     min-width: 200px;
-//     margin-top: 3em;
-//     display: flex;
-//     flex-direction: column;
-//     row-gap: 1em;
-//     max-height: 500px;
-//     overflow-y: auto;
-
-//     &::-webkit-scrollbar {
-//         width: 12px; /* Largura da barra de rolagem */
-//       }
-
-//       /* Estilização da alça (thumb) da barra de rolagem */
-//       &::-webkit-scrollbar-thumb {
-//         background-color: #888; /* Cor da alça */
-//         border-radius: 6px; /* Raio da borda da alça */
-//       }
-
-//       /* Estilização do fundo da barra de rolagem */
-//       &::-webkit-scrollbar-track {
-//         background-color: #f1f1f1; /* Cor de fundo da barra de rolagem */
-//         border-radius: 6px; /* Raio da borda do fundo da barra de rolagem */
-//       }
-
-//       /* Estilização ao passar o mouse sobre a barra de rolagem */
-//       &::-webkit-scrollbar-thumb:hover {
-//         background-color: #555; /* Cor da alça ao passar o mouse */
-//       }
-// }
 
 .image {
     align-self: center;
     width: 20vw;
+
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
 }
 
 h3 {
