@@ -1,48 +1,81 @@
 import { useState } from 'react';
 import classNames from 'classnames';
 import styles from './integrantes.module.scss';
-import michel from '../../fotos/michel.jpg';
-import raquel from '../../fotos/raquel.jpg';
-import thiago from '../../fotos/thiago.jpg';
-import jilson from '../../fotos/jilson.jpg';
-import ricky from '../../fotos/ricky.jpg';
-import eddie from '../../fotos/eddie.jpg';
+import michel from '../../avatars/michel.jpeg';
+import raquel from '../../avatars/raquel.jpeg';
+import thiago from '../../avatars/thiago.jpeg';
+import jilson from '../../avatars/jilson.jpeg';
+import ricky from '../../avatars/ricky.jpeg';
+import eddie from '../../avatars/eddie.jpeg';
 import details from './details';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 export interface IntegrantesProps {
     className?: string;
 }
 
 export const Integrantes = ({ className }: IntegrantesProps) => {
-    console.log(details);
+   const [bg, setBg] = useState<string>('ricky');
 
     const [detail, setDetail] = useState<any>(details[0]);
 
     const handleClick = (number: number) => {
         setDetail(details[number]);
+        setBg(details[number].id);
     };
     return (
-        <div className={classNames(styles.root, className)} id="integrantes">
+        <div className={`${styles.root} ${styles[bg]}`}>
             <h1 className={styles.h1}>Integrantes</h1>
             <div className={styles.thumbcontainer}>
-                <button className={styles.imgButton} onClick={() => handleClick(0)}>
-                    <img src={ricky} alt="" className={styles.thumb} />
-                </button>
-                <button className={styles.imgButton} onClick={() => handleClick(1)}>
-                    <img src={michel} alt="" className={styles.thumb} />
-                </button>
-                <button className={styles.imgButton} onClick={() => handleClick(2)}>
-                    <img src={raquel} alt="" className={styles.thumb} />
-                </button>
-                <button className={styles.imgButton} onClick={() => handleClick(3)}>
-                    <img src={eddie} alt="" className={styles.thumb} />
-                </button>
-                <button className={styles.imgButton} onClick={() => handleClick(4)}>
-                    <img src={jilson} alt="" className={styles.thumb} />
-                </button>
-                <button className={styles.imgButton} onClick={() => handleClick(5)}>
-                    <img src={thiago} alt="" className={styles.thumb} />
-                </button>
+                <div className={styles.thumbBg}>
+                    <button className={styles.imgButton} onClick={() => handleClick(0)}>
+                        <img src={ricky} alt="" className={styles.thumb} />
+                    </button>
+                    <a href="https://www.instagram.com/h_rickyfranco/" target="_blank">
+                        <FontAwesomeIcon className={styles.faicons} icon={faInstagram} />
+                    </a>
+                </div>
+                <div className={styles.thumbBg}>
+                    <button className={styles.imgButton} onClick={() => handleClick(1)}>
+                        <img src={michel} alt="" className={styles.thumb} />
+                    </button>
+                    <a href="https://www.instagram.com/meh.studio/" target="_blank">
+                        <FontAwesomeIcon className={styles.faicons} icon={faInstagram} />
+                    </a>
+                </div>
+                <div className={styles.thumbBg}>
+                    <button className={styles.imgButton} onClick={() => handleClick(2)}>
+                        <img src={raquel} alt="" className={styles.thumb} />
+                    </button>
+                    <a href="https://www.instagram.com/raquelfboralli/" target="_blank">
+                        <FontAwesomeIcon className={styles.faicons} icon={faInstagram} />
+                    </a>
+                </div>
+                <div className={styles.thumbBg}>
+                    <button className={styles.imgButton} onClick={() => handleClick(3)}>
+                        <img src={eddie} alt="" className={styles.thumb} />
+                    </button>
+                    <a href="https://www.instagram.com/eddieskull.esi/" target="_blank">
+                        <FontAwesomeIcon className={styles.faicons} icon={faInstagram} />
+                    </a>
+                </div>
+                <div className={styles.thumbBg}>
+                    <button className={styles.imgButton} onClick={() => handleClick(4)}>
+                        <img src={jilson} alt="" className={styles.thumb} />
+                    </button>
+                    <a href="https://www.instagram.com/jilson_good_vibe/" target="_blank">
+                        <FontAwesomeIcon className={styles.faicons} icon={faInstagram} />
+                    </a>
+                </div>
+                <div className={styles.thumbBg}>
+                    <button className={styles.imgButton} onClick={() => handleClick(5)}>
+                        <img src={thiago} alt="" className={styles.thumb} />
+                    </button>
+                    <a href="https://www.instagram.com/thicamargodrum/" target="_blank">
+                        <FontAwesomeIcon className={styles.faicons} icon={faInstagram} />
+                    </a>
+                </div>
             </div>
             <div className={styles.detailscontainerout}>
                 <h2 className={styles.h2}>{detail ? detail.nome : ''}</h2>
