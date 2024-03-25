@@ -20,9 +20,9 @@ const details = [
     },
     {
       id: 2,
-      nome: 'Raquel Boralli - Voz',
+      nome: '🧩💙Raquel Boralli - Voz',
       foto: raquel,
-      details: 'Raquel',
+      details: 'Originária de São Paulo, com 33 anos de idade, teve seu primeiro contato com a música desde a infância. Aos 7 anos, já demonstrava seu talento vocal, nutrindo desde então uma paixão pelo canto. Aos 14 anos, iniciou seu aprendizado em técnicas de canto gutural e drive. Como pessoa com transtorno do espectro autista, encontrou na música uma forma única de expressão e conexão com o mundo ao seu redor. Além disso, sendo autodidata, desenvolveu suas habilidades vocais por conta própria, sem recorrer a aulas formais de canto. Participou de diversos projetos de banda autoral ao longo de sua trajetória musical e teve a oportunidade de se apresentar com a banda CR13 em uma participação especial. Atualmente, embarca em uma nova caminhada como parte da banda Indjent, contribuindo com sua voz e experiência para criar uma mensagem poderosa e inspiradora através da música.',
     },
     {
       id: 3,
@@ -40,7 +40,9 @@ const details = [
       id: 5,
       nome: 'Thi Camargo - Bateria',
       foto: thiago,
-      details: 'Thiago',
+      details: `Musico desde 2002 , iniciou a carreira tocando em bandas de rock na noite paulistana, e lecionando bateria em escolas Particulares e em cursos livres de renome em São Paulo.
+      Viajou o Pais inteiro com uma banda de Country Rock antes da pandemia e hoje é Diretor em uma escola de musica em São Paulo.
+      Com a Indjent realiza um projeto de realização pessoal e profissional em poder expressar sua identidade musical nas composições.`,
     }
 ]
 
