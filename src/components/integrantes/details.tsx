@@ -31,12 +31,6 @@ const details = [
       details: `Teve seu primeiro contato com uma guitarra em 1994, iniciou sua jornada formando sua primeira banda com colegas de colégio no mesmo ano. Em 1997, mudou-se para Nova York, onde teve uma passagem breve em dois grupos antes de fundar a banda Niobe em 2001, durante o auge do NuMetal. Com Niobe, lançou o álbum "KULTURALL" em 2003, produzido no bairro do Brooklin - N.Y pelo mesmo produtor de bandas como Candiria e Murader, Mr. Mike Barelli. Apresentou-se em locais históricos como CBGB'S e abriu shows para bandas como ill Ninõ e Three Days Grace. Em 2005, mudou-se para Los Angeles e formou outra banda, The Other Side of Sunday, se apresentando em clubes lendários como The Roxy e The Whiskey A Gogo. Após um período de autoconhecimento, junta-se ao  Indjent, buscando transmitir uma mensagem de coragem, respeito e igualdade em um mundo desafiador.`,
     },
     {
-      id: 'jilson',
-      nome: 'Jilson Magno - Baixo',
-      foto: jilson,
-      details: 'Um músico multifacetado de Minas Gerais, iniciou sua jornada musical aos 7 anos com um violão DiGiorgio. Passou por uma banda sinfônica e explorou diversos estilos musicais, incluindo djent, metal, rap e outros. Além de tocar vários instrumentos, ele lecionou música, ministrou aulas sobre produção musical, produziu beats de rap e trap, e trabalhou em afinação de vozes e edições de áudio. Agora, em São Paulo, colaborou com artistas como Planta & Raiz, Banda Pixote e Belo, trazendo sua versatilidade para a cena musical.',
-    },
-    {
       id: 'thiago',
       nome: 'Thi Camargo - Bateria',
       foto: thiago,

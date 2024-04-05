@@ -62,14 +62,6 @@ export const Integrantes = ({ className }: IntegrantesProps) => {
                 </div>
                 <div className={styles.thumbBg}>
                     <button className={styles.imgButton} onClick={() => handleClick(4)}>
-                        <img src={jilson} alt="" className={styles.thumb} />
-                    </button>
-                    <a href="https://www.instagram.com/jilson_good_vibe/" target="_blank">
-                        <FontAwesomeIcon className={styles.faicons} icon={faInstagram} />
-                    </a>
-                </div>
-                <div className={styles.thumbBg}>
-                    <button className={styles.imgButton} onClick={() => handleClick(5)}>
                         <img src={thiago} alt="" className={styles.thumb} />
                     </button>
                     <a href="https://www.instagram.com/thicamargodrum/" target="_blank">
