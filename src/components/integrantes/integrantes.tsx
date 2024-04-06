@@ -25,7 +25,7 @@ export const Integrantes = ({ className }: IntegrantesProps) => {
         setBg(details[number].id);
     };
     return (
-        <div className={`${styles.root} ${styles[bg]}`}>
+        <div className={`${styles.root} ${styles[bg]}`} id="integrantes">
             <h1 className={styles.h1}>Integrantes</h1>
             <div className={styles.thumbcontainer}>
                 <div className={styles.thumbBg}>
