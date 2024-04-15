@@ -1,7 +1,7 @@
 import michel from '../../fotos/michel.jpg';
 import raquel from '../../fotos/raquel.jpg';
 import thiago from '../../fotos/thiago.jpg';
-import jilson from '../../fotos/jilson.jpg';
+import wladimir from '../../fotos/wladimir.jpeg';
 import ricky from '../../fotos/ricky.jpg';
 import eddie from '../../fotos/eddie.jpg';
 
@@ -37,6 +37,13 @@ const details = [
       details: `Musico desde 2002 , iniciou a carreira tocando em bandas de rock na noite paulistana, e lecionando bateria em escolas Particulares e em cursos livres de renome em São Paulo.
       Viajou o Pais inteiro com uma banda de Country Rock antes da pandemia e hoje é Diretor em uma escola de musica em São Paulo.
       Com a Indjent realiza um projeto de realização pessoal e profissional em poder expressar sua identidade musical nas composições.`,
+    }
+    ,
+    {
+      id: 'wladimir',
+      nome: 'Wladimir Veras - Baixo',
+      foto: wladimir,
+      details: 'Nascido em 1998 em São Paulo, a música entrou em sua vida de forma definitiva por volta dos 12 anos quando ouviu Dream Theater pela primeira vez. Desde então, mergulhou no mundo do metal progressivo, sua principal influência. Aos 14 anos ganhou sua primeira guitarra. Em 2021, entrou para a banda LockMind como baixista e, desde então, participou do lançamento de um single no mesmo ano e um álbum no início de 2023. Além disso, iniciou um projeto solo esse ano com o lançamento do cover de “Love You to Death”, onde fez toda a produção da música sozinho. Agora com a banda Indjent, terá a oportunidade de estar presente em um novo projeto em sua vida, aliando sua pegada forte e pesada com a luta para dar voz a quem mais precisa.',
     }
 ]
 

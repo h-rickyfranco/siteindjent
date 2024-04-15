@@ -21,7 +21,7 @@ export const About = ({ className }: AboutProps) => {
                     limites da música de protesto, inspirando e empoderando aqueles que enfrentam
                     adversidades em um mundo tão desigual. Formada por Ricky Franco (guitarra e
                     voz), Michel Villares (voz), Raquel Boralli (voz), Eddie Skull (guitarra),
-                    Jilson Magno (baixo) e Thi Camargo (bateria), a Indjent nasceu da paixão
+                    Wladimir Veras (baixo) e Thi Camargo (bateria), a Indjent nasceu da paixão
                     compartilhada por expressão artística e justiça social. Cada membro traz consigo
                     uma história única, mas todos compartilham da mesma visão: de usar sua música
                     como uma ferramenta para a mudança positiva.

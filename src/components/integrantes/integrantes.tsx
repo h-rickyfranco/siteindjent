@@ -4,7 +4,7 @@ import styles from './integrantes.module.scss';
 import michel from '../../avatars/michel.jpeg';
 import raquel from '../../avatars/raquel.jpeg';
 import thiago from '../../avatars/thiago.jpeg';
-import jilson from '../../avatars/jilson.jpeg';
+import wladimir from '../../avatars/wladimir.jpg';
 import ricky from '../../avatars/ricky.jpeg';
 import eddie from '../../avatars/eddie.jpeg';
 import details from './details';
@@ -57,6 +57,14 @@ export const Integrantes = ({ className }: IntegrantesProps) => {
                         <img src={eddie} alt="" className={styles.thumb} />
                     </button>
                     <a href="https://www.instagram.com/eddieskull.esi/" target="_blank">
+                        <FontAwesomeIcon className={styles.faicons} icon={faInstagram} />
+                    </a>
+                </div>
+                <div className={styles.thumbBg}>
+                    <button className={styles.imgButton} onClick={() => handleClick(5)}>
+                        <img src={wladimir} alt="" className={styles.thumb} />
+                    </button>
+                    <a href="https://www.instagram.com/wladimirpveras/" target="_blank">
                         <FontAwesomeIcon className={styles.faicons} icon={faInstagram} />
                     </a>
                 </div>
