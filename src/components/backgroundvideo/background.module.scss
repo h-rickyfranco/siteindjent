@@ -1,0 +1,72 @@
+.bg {
+    width: 100%;
+    height: 100vh;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 60%;
+    // display: none;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.bg2 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 50px;
+}
+.heading {
+}
+.heading {
+    color: white;
+}
+.videoContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.content {
+    position: absolute;
+    z-index: 1;
+    flex-direction: column;
+}
+.socials {
+    display: flex;
+}
+.deezer {
+    width: 50px;
+    height: 50px;
+}
+.socialsIcons {
+    fill: #6a4c99;
+    color: #6a4c99;
+}
+.socialsIcons {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+.soc {
+}

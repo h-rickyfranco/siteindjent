@@ -5,7 +5,6 @@ import logo from '../../imagens/lotus.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
-import Counter from '../counter/counter';
 import useCountdown from '../../hooks/useCountdown';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-scroll';
@@ -52,30 +51,15 @@ export const Header = ({ className }: HeaderProps) => {
                 </a>
             </div>
             <div className={styles.menu}>
-                <Link
-                    to="hero"
-                    className={styles.link}
-                >
+                <Link to="hero" className={styles.link}>
                     Home
                 </Link>
-                <Link
-                    to="about"
-                    className={styles.link}
-                >
+                <Link to="about" className={styles.link}>
                     Sobre
                 </Link>
-                <Link
-                    to="integrantes"
-                    className={styles.link}
-                >
+                <Link to="integrantes" className={styles.link}>
                     Integrantes
                 </Link>
-            </div>
-            <div className={`${styles.countercontainer} ${isAbout ? '' : styles.displaycounter}`}>
-                <Counter title="Dias" number={day} />
-                <Counter title="Horas" number={hour} />
-                <Counter title="Minutos" number={minute} />
-                <Counter title="Segundos" number={second} />
             </div>
             <div className={styles.social}>
                 <a href="https://www.youtube.com/@bandaindjent" target="_blank">
